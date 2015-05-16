@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+        android:id="@+id/tvi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/eteUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvi"
+        android:hint="Ingrese usuario"
+        android:layout_alignLeft="@id/tvi"/>
+    <EditText
+        android:hint="Ingrese Password"
+        android:id="@+id/etePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eteUsuario"
+        android:layout_alignLeft="@id/tvi"/>
+    <Button
+        android:id="@+id/butLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/etePassword"
+        android:layout_alignRight="@id/etePassword"/>
+    <Button
+        android:id="@+id/butSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_below="@id/etePassword"
+        android:layout_toLeftOf="@id/butLogin"/>
+
+</RelativeLayout>
