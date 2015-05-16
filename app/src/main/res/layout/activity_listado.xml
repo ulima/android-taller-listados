@@ -11,8 +11,13 @@
         android:id="@+id/spiPersonas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/> -->
-    <ListView
+    <!--<ListView
         android:id="@+id/lviPersonas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <GridView
+        android:id="@+id/gviPersonas"
+        android:numColumns="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

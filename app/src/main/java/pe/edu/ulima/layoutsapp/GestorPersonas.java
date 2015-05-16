@@ -29,6 +29,11 @@ public class GestorPersonas {
         persona.setApellido("Lopez");
         personas.add(persona);
 
+        persona = new Persona();
+        persona.setNombre("Pablo");
+        persona.setApellido("Jimenez");
+        personas.add(persona);
+
         return personas;
     }
 }

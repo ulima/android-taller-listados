@@ -52,13 +52,14 @@ public class ListadoPersonasAdapter extends BaseAdapter{
             viewHolder.tviApellido =
                     (TextView)view.findViewById(R.id.tviApellido);
 
-            view.setT
+            view.setTag(viewHolder);
+        }else{
+            viewHolder = (ViewHolder) view.getTag();
         }
 
-
         Persona persona = mPersonas.get(i);
-        tviNombre.setText(persona.getNombre());
-        tviApellido.setText(persona.getApellido());
+        viewHolder.tviNombre.setText(persona.getNombre());
+        viewHolder.tviApellido.setText(persona.getApellido());
 
         return view;
     }
